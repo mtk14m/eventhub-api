@@ -80,10 +80,16 @@ Pipfile.lock
 # keep poetry.lock in repo generally; ignore virtual env
 .venv/
 
-# pyenv-virtualenv
+# pyenv-virtualenv / venvs
 venv/
 ENV/
 env/
+
+# PEP 582 local packages
+__pypackages__/
+
+# Ruff cache
+.ruff_cache/
 
 # Spyder project settings
 .spyderproject
@@ -122,14 +128,14 @@ docker-compose.override.yml
 # Coverage
 coverage/
 
-# PyCharm
-.idea/
-
 # Misc
 Thumbs.db
 
 # Test artifacts
-tests/.pytest_cache/
+.pytest_cache/
+
+# General cache
+.cache/
 
 # Poetry virtual env (for some setups)
 .venv
